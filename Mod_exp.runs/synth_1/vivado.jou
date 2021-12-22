@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Dec 11 15:32:23 2021
+# Process ID: 9044
+# Current directory: F:/Vivado/LAB/Mod_exp/Mod_exp.runs/synth_1
+# Command line: vivado.exe -log Mod_exp.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Mod_exp.tcl
+# Log file: F:/Vivado/LAB/Mod_exp/Mod_exp.runs/synth_1/Mod_exp.vds
+# Journal file: F:/Vivado/LAB/Mod_exp/Mod_exp.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Mod_exp.tcl -notrace

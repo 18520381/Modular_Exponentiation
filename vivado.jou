@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Dec 18 21:16:03 2021
+# Process ID: 14888
+# Current directory: C:/Users/ASUS/Downloads/Mod_exp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7872 C:\Users\ASUS\Downloads\Mod_exp\Mod_exp.xpr
+# Log file: C:/Users/ASUS/Downloads/Mod_exp/vivado.log
+# Journal file: C:/Users/ASUS/Downloads/Mod_exp\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ASUS/Downloads/Mod_exp/Mod_exp.xpr
+update_compile_order -fileset sources_1
+open_run impl_1

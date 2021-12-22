@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Dec 11 15:36:21 2021
+# Process ID: 6516
+# Current directory: F:/Vivado/LAB/Mod_exp/Mod_exp.runs/impl_1
+# Command line: vivado.exe -log Mod_exp.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Mod_exp.tcl -notrace
+# Log file: F:/Vivado/LAB/Mod_exp/Mod_exp.runs/impl_1/Mod_exp.vdi
+# Journal file: F:/Vivado/LAB/Mod_exp/Mod_exp.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Mod_exp.tcl -notrace

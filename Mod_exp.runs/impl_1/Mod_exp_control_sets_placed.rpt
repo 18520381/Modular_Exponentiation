@@ -1,0 +1,133 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Sat Dec 11 15:39:18 2021
+| Host         : DESKTOP-AAGVBOR running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Mod_exp_control_sets_placed.rpt
+| Design       : Mod_exp
+| Device       : xc7a200t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    55 |
+|    Minimum number of control sets                        |    55 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   152 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    55 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |    14 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    41 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            2048 |          829 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              61 |           21 |
+| Yes          | No                    | No                     |            8248 |         2277 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            4091 |         1435 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------+---------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |           Enable Signal          |         Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+----------------------------------+---------------------------------+------------------+----------------+--------------+
+| ~CLK_IBUF_BUFG | M_data[927]                      |                                 |                3 |              4 |         1.33 |
+| ~CLK_IBUF_BUFG | M_data[511]                      |                                 |                3 |              4 |         1.33 |
+| ~CLK_IBUF_BUFG | M_data[767]                      |                                 |                2 |              4 |         2.00 |
+| ~CLK_IBUF_BUFG | M_data[1023]                     |                                 |                2 |              4 |         2.00 |
+| ~CLK_IBUF_BUFG | M_data[415]                      |                                 |                2 |              4 |         2.00 |
+| ~CLK_IBUF_BUFG | M_data[895]                      |                                 |                3 |              4 |         1.33 |
+| ~CLK_IBUF_BUFG | M_data[159]                      |                                 |                2 |              4 |         2.00 |
+| ~CLK_IBUF_BUFG | M_data[383]                      |                                 |                3 |              4 |         1.33 |
+| ~CLK_IBUF_BUFG | M_data[831]                      |                                 |                3 |              4 |         1.33 |
+| ~CLK_IBUF_BUFG | M_data[127]                      |                                 |                4 |              4 |         1.00 |
+| ~CLK_IBUF_BUFG | M_data[639]                      |                                 |                2 |              4 |         2.00 |
+| ~CLK_IBUF_BUFG | M_data[255]                      |                                 |                2 |              4 |         2.00 |
+| ~CLK_IBUF_BUFG | M_data[671]                      |                                 |                3 |              4 |         1.33 |
+| ~CLK_IBUF_BUFG | M_data[319]                      |                                 |                4 |              4 |         1.00 |
+|  CLK_IBUF_BUFG | inst_sqr/EN                      | inst_mul/counter_reg[0]_rep__14 |                8 |             17 |         2.12 |
+|  CLK_IBUF_BUFG | inst_mul/EN                      | inst_mul/counter_reg[0]_rep__14 |                9 |             17 |         1.89 |
+|  CLK_IBUF_BUFG | counter_loop                     | RST_IBUF                        |                5 |             17 |         3.40 |
+|  CLK_IBUF_BUFG |                                  | RST_IBUF                        |               21 |             61 |         2.90 |
+| ~CLK_IBUF_BUFG | M_data[670]                      | E_data[670]_i_1_n_0             |               25 |             80 |         3.20 |
+| ~CLK_IBUF_BUFG | M_data[414]                      | E_data[414]_i_1_n_0             |               27 |             80 |         2.96 |
+| ~CLK_IBUF_BUFG | M_data[1021]                     | E_data[1021]_i_1_n_0            |               27 |             80 |         2.96 |
+| ~CLK_IBUF_BUFG | M_data[509]                      | E_data[509]_i_1_n_0             |               27 |             80 |         2.96 |
+| ~CLK_IBUF_BUFG | M_data[125]                      | E_data[125]_i_1_n_0             |               29 |             80 |         2.76 |
+| ~CLK_IBUF_BUFG | M_data[158]                      | E_data[158]_i_1_n_0             |               26 |             80 |         3.08 |
+| ~CLK_IBUF_BUFG | M_data[253]                      | E_data[253]_i_1_n_0             |               27 |             80 |         2.96 |
+| ~CLK_IBUF_BUFG | M_data[381]                      | E_data[381]_i_1_n_0             |               28 |             80 |         2.86 |
+| ~CLK_IBUF_BUFG | M_data[926]                      | E_data[926]_i_1_n_0             |               18 |             80 |         4.44 |
+| ~CLK_IBUF_BUFG | M_data[893]                      | E_data[893]_i_1_n_0             |               29 |             80 |         2.76 |
+| ~CLK_IBUF_BUFG | M_data[765]                      | E_data[765]_i_1_n_0             |               28 |             80 |         2.86 |
+| ~CLK_IBUF_BUFG | M_data[637]                      | E_data[637]_i_1_n_0             |               30 |             80 |         2.67 |
+| ~CLK_IBUF_BUFG | M_data[543]                      | E_data[543]_i_1_n_0             |               26 |             84 |         3.23 |
+| ~CLK_IBUF_BUFG | M_data[799]                      | E_data[799]_i_1_n_0             |               32 |             84 |         2.62 |
+| ~CLK_IBUF_BUFG | M_data[287]                      | E_data[287]_i_1_n_0             |               28 |             84 |         3.00 |
+| ~CLK_IBUF_BUFG | M_data[31]                       | E_data[31]_i_1_n_0              |               23 |             84 |         3.65 |
+| ~CLK_IBUF_BUFG | M_data[318]                      | E_data[318]_i_1_n_0             |               54 |            168 |         3.11 |
+| ~CLK_IBUF_BUFG | M_data[830]                      | E_data[830]_i_1_n_0             |               64 |            168 |         2.62 |
+| ~CLK_IBUF_BUFG | M_data[447]                      | E_data[447]_i_1_n_0             |               53 |            172 |         3.25 |
+| ~CLK_IBUF_BUFG | M_data[766]                      | E_data[766]_i_1_n_0             |               69 |            172 |         2.49 |
+| ~CLK_IBUF_BUFG | M_data[510]                      | E_data[510]_i_1_n_0             |               57 |            172 |         3.02 |
+| ~CLK_IBUF_BUFG | M_data[382]                      | E_data[382]_i_1_n_0             |               59 |            172 |         2.92 |
+| ~CLK_IBUF_BUFG | M_data[575]                      | E_data[575]_i_1_n_0             |               77 |            172 |         2.23 |
+| ~CLK_IBUF_BUFG | M_data[703]                      | E_data[703]_i_1_n_0             |               68 |            172 |         2.53 |
+| ~CLK_IBUF_BUFG | M_data[638]                      | E_data[638]_i_1_n_0             |               68 |            172 |         2.53 |
+| ~CLK_IBUF_BUFG | M_data[959]                      | E_data[959]_i_1_n_0             |               47 |            172 |         3.66 |
+| ~CLK_IBUF_BUFG | M_data[191]                      | E_data[191]_i_1_n_0             |               54 |            172 |         3.19 |
+| ~CLK_IBUF_BUFG | M_data[1022]                     | E_data[1022]_i_1_n_0            |               64 |            172 |         2.69 |
+| ~CLK_IBUF_BUFG | M_data[126]                      | E_data[126]_i_1_n_0             |               64 |            172 |         2.69 |
+| ~CLK_IBUF_BUFG | M_data[254]                      | E_data[254]_i_1_n_0             |               59 |            172 |         2.92 |
+| ~CLK_IBUF_BUFG | M_data[894]                      | E_data[894]_i_1_n_0             |               70 |            172 |         2.46 |
+| ~CLK_IBUF_BUFG | M_data[63]                       | E_data[0]_i_1_n_0               |               56 |            172 |         3.07 |
+|  CLK_IBUF_BUFG | inst_mul/E[0]                    |                                 |              352 |           1024 |         2.91 |
+|  CLK_IBUF_BUFG | inst_sqr/E[0]                    |                                 |              260 |           1024 |         3.94 |
+| ~CLK_IBUF_BUFG |                                  |                                 |              829 |           2048 |         2.47 |
+| ~CLK_IBUF_BUFG | inst_sqr/M_temp[1023]_i_1_n_0    |                                 |              689 |           3072 |         4.46 |
+| ~CLK_IBUF_BUFG | inst_mul/M_temp[1023]_i_1__0_n_0 |                                 |              938 |           3072 |         3.28 |
++----------------+----------------------------------+---------------------------------+------------------+----------------+--------------+
+
+
